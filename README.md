@@ -163,7 +163,7 @@ The `prototype_converger` locks these steps into a `while` loop. The cycle repea
 ---
 # 📊 Model Execution & Results Interpretation
 
-Using the following configuration we plot the "Elbow Plot" to determine the best `K` :
+Using the following configuration we plot the "Elbow Plot" to determine the reasonable `K` :
 ```python
 K_Model.elbow_plotter(
 	encoded_numerical_features, 
