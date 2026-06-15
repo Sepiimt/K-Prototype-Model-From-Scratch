@@ -150,7 +150,6 @@ In highly skewed datasets, a prototype may occasionally fail to "capture" any da
 
 ```python
 empty_prototype_indices = np.where(cluster_counts.flatten() == 0)[0]
-
 ```
 
 If an orphaned cluster is detected, it is instantly re-seeded using a random point from the active dataset, ensuring exactly $K$ clusters exist at all times.
@@ -164,10 +163,26 @@ The `prototype_converger` locks these steps into a `while` loop. The cycle repea
 ---
 # 📊 Model Execution & Results Interpretation
 
-To benchmark the algorithm on the processed Zomato dataset, the model was executed with the following configuration:
-
+Using the following configuration we plot the "Elbow Plot" to determine the best `K` :
 ```python
-numerical_prototypes, categorical_prototypes = K_Model.fit(
+K_Model.elbow_plotter(
+	encoded_numerical_features, 
+	encoded_categorical_features, 
+	gamma = None, 
+	max_k = 20, 
+	n_attempts_for_best_init_prototypes = 350, 
+	max_convergance_iterations=500, 
+	timer = True
+)
+```
+
+The results:
+![Cost_per_k](https://i.postimg.cc/ydtG5v92/cost-per-k.png)
+
+
+To benchmark the algorithm on the processed Zomato dataset, the model was executed with the following configuration with respect to "Elbow Plot":
+```python
+K_Model.fit(
     numerical_array=encoded_numerical_features, 
     categorical_array=encoded_categorical_features, 
     K=10, 
