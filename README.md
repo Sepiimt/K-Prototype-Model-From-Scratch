@@ -32,11 +32,12 @@ The `empty_prototype_checker` continuously monitors the `cluster_counts` matrix.
 The `elbow_plotter` automates the iteration over multiple $K$ values, storing convergence costs and generating an elbow plot. The visualizer automatically handles directory creation (`..\results\figures`) and exports high-DPI `.png` files for analysis.
 
 ---
-# ** Data Preparation Pipeline**
+# ⚙️ Data Preparation Pipeline
 
 Handling real-world data like the Zomato Bangalore dataset requires strict type casting, outlier rejection, and scale normalization to ensure the K-Prototype algorithm converges efficiently without numerical instability.
 
 ## Part 1: 🧹 Data Cleaning
+Due to Github's file size limit, you can access the raw dataset through: `https://www.kaggle.com/datasets/rajeshrampure/zomato-dataset`
 
 The raw dataset contained unformatted strings, undefined nulls, and irrelevant metadata that needed to be stripped before any mathematical operations could occur.
 	
