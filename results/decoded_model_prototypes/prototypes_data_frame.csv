@@ -1,0 +1,11 @@
+rate,votes,approx_cost(for two people),online_order,book_table,location,rest_type,cuisines,listed_in(type),listed_in(city)
+4.00399699296056,653.7842412154062,646.5096279923031,Yes,No,Koramangala 5th Block,Casual Dining,North Indian,Dine-out,Koramangala 4th Block
+3.814339882157875,243.90069373795313,553.297512193669,Yes,No,Indiranagar,Casual Dining,North Indian,Delivery,Indiranagar
+3.698764622790077,0.005951809518328139,310.3914688491503,No,No,BTM,Quick Bites,North Indian,Delivery,BTM
+3.9988640529558594,280.1279998474878,1372.2198002611879,No,Yes,MG Road,Casual Dining,Finger Food,Dine-out,Church Street
+4.260776606495381,1788.0700865635044,1136.522188674802,Yes,Yes,Koramangala 5th Block,Casual Dining,North Indian,Delivery,Koramangala 7th Block
+3.6216774806526537,65.65124278200565,336.2782259616515,Yes,No,Marathahalli,Quick Bites,"Chinese, North Indian",Delivery,Marathahalli
+3.546159719266999,43.6040439814242,712.2282695764985,Yes,No,Ulsoor,Casual Dining,"Chinese, North Indian",Dine-out,Frazer Town
+3.361229279033064,9.674618508684942,323.3615244772395,No,No,BTM,Quick Bites,"Chinese, North Indian",Dine-out,Koramangala 7th Block
+3.6928645645949914,108.36410378684965,349.0758179867043,Yes,No,BTM,Quick Bites,North Indian,Dine-out,BTM
+3.4308869813145835,14.383089572720596,314.0744644816725,Yes,No,BTM,Quick Bites,"Chinese, North Indian",Delivery,BTM
